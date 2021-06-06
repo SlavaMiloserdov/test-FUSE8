@@ -1,0 +1,27 @@
+$button-width: 150px;
+$button-height: 50px;
+$button-border: 1px solid #D8D8D8;
+$button-ff: 'Open Sans', sans-serif;
+$button-fw: bold;
+
+.see-more-button {
+    width: $button-width;
+    height: $button-height;
+    display: block;
+    margin: 0 auto;
+
+    border: $button-border;
+    border-radius: 25px;
+    cursor: pointer;
+
+    font-weight: $button-fw;
+    font-family: $button-ff;
+
+    &:hover {
+        border: 2px solid black;
+    }
+}
+
+.see-more-button__arrow {
+    vertical-align: middle;
+}

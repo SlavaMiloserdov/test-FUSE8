@@ -1,0 +1,26 @@
+$header__title-color: green; 
+$header__title-ff: 'Open Sans', sans-serif;
+$header__title-fw: 700;
+$header__title-fs: 36px;
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header__title {
+    color: $header__title-color;
+    font-family: $header__title-ff;
+    font-weight: $header__title-fw;
+    font-size: $header__title-fs;
+}
+
+@media (max-width: 480px) {
+  .header__title {
+      font-size: 7vw;
+  }
+}

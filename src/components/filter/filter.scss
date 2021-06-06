@@ -1,0 +1,35 @@
+$filter-text-color: #363636;
+$filter-text-size: 16px;
+$filter-font-family: 'Open Sans', sans-serif;
+$filter-font-weight: 700;
+$filter__input-width: 418px;
+$filter__input-height: 50px;
+$filter__input-border-radius: 25px;
+
+
+.filter {
+    display: flex;
+    font-family: $filter-font-family;
+    font-weight: $filter-font-weight;
+    line-height: $filter__input-height;
+
+    color: $filter-text-color;
+}
+
+.filter__title {
+    vertical-align: middle;
+}
+
+.filter__input {
+    width: $filter__input-width;
+    height: $filter__input-height;
+    margin: 0 0 0 15px;
+    padding: 0;
+
+    font-size: $filter-text-size;
+    font-weight: $filter-font-weight;
+    color: $filter-text-color;
+
+    border-radius: $filter__input-border-radius;
+    outline:none;
+}

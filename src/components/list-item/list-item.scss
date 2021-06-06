@@ -1,0 +1,70 @@
+$list-item__text-color: #363636;
+$list-item__title-fs: 20px;
+$list-item__text-fs: 16px;
+$list-item__type-color: #ffffff;
+$list-item-ff: 'Open Sans', sans-serif;
+$list-item__title-fw: 700;
+$list-item__type_blue-color: #006F79;
+$list-item__type_orange-color: #EC6608;
+$list-item-bg-color: #F8F8F8;
+$list-item-border: 1px solid #D8D8D8;
+$list-item__img-size: 302px;
+
+.d-none {
+    display: none;
+}
+
+.list-item a {
+    text-decoration: none;
+}
+
+.list-item {
+    margin: 5% 1%;
+    position: relative;
+    max-width: $list-item__img-size;
+
+    list-style-type: none;
+    background: $list-item-bg-color;
+    border: $list-item-border;
+    box-sizing: border-box;
+
+    font-size: $list-item__text-fs;
+    font-family: $list-item-ff;
+}
+
+.list-item__title {
+    font-family: $list-item-ff;
+    font-weight: $list-item__title-fw;
+    font-size: $list-item__title-fs;
+}
+
+.list-item__title, .list-item__address,
+ .list-item__price, .list-item__additional-info {
+    color: $list-item__text-color;
+    padding: 0 3%;
+}
+
+.list-item__type {
+    position: absolute;
+    right: 0;
+    top: 118px;
+
+    margin: 0;
+    padding: 5px;    
+
+    color: $list-item__type-color;
+}
+
+.list-item__type_blue {
+    background-color: $list-item__type_blue-color;
+}
+
+.list-item__type_orange {
+    background-color: $list-item__type_orange-color;
+}
+
+.list-item__price span {
+    padding: 0 0 0 2%;
+
+    font-weight: bold;    
+}
