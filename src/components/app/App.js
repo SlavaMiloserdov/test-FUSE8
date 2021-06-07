@@ -1,18 +1,23 @@
 import React from 'react';
 import './App.scss';
-import Header from '../header';
-import Filter from '../filter';
-import List from '../list';
-import SeeMoreButton from '../see-more-button';
+import { Route, Switch } from 'react-router-dom';
+import { HomePage, DetailsPage } from '../pages';
 
 function App() {
 
   return (
     <div className="App">
-      <Header />
-      <Filter />
-      <List />
-      <SeeMoreButton />
+      <Switch>
+        <Route
+          path="/"
+          component={HomePage}
+          exact />
+
+        <Route
+          path="/details"
+          component={DetailsPage}
+          />
+      </Switch>
     </div>
   );
 }
