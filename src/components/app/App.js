@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.scss';
 import Header from '../header';
 import Filter from '../filter';

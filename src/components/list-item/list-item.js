@@ -17,7 +17,6 @@ const returnCurrentTypeProperty = (type) => {
 export default class ListItem extends Component {
     render () {
         const { property: { title, address, type, price }, currency } = this.props;
-        console.log(type);
 
         return (
             <React.Fragment>
