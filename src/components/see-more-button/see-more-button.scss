@@ -3,12 +3,13 @@ $button-height: 50px;
 $button-border: 1px solid #D8D8D8;
 $button-ff: 'Open Sans', sans-serif;
 $button-fw: bold;
+$button-m: 5px auto 50px;
 
 .see-more-button {
     width: $button-width;
     height: $button-height;
     display: block;
-    margin: 0 auto;
+    margin: $button-m;
 
     border: $button-border;
     border-radius: 25px;

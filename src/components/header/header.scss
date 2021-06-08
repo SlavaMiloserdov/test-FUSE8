@@ -2,6 +2,7 @@ $header__title-color: green;
 $header__title-ff: 'Open Sans', sans-serif;
 $header__title-fw: 700;
 $header__title-fs: 36px;
+$header__title-margin: 40px 0;
 
 .header {
     display: flex;
@@ -13,6 +14,8 @@ $header__title-fs: 36px;
 }
 
 .header__title {
+    margin: $header__title-margin;
+
     color: $header__title-color;
     font-family: $header__title-ff;
     font-weight: $header__title-fw;

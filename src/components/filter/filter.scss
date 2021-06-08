@@ -9,6 +9,8 @@ $filter__input-border-radius: 25px;
 
 .filter {
     display: flex;
+    margin-left: 1%;
+
     font-family: $filter-font-family;
     font-weight: $filter-font-weight;
     line-height: $filter__input-height;

@@ -9,8 +9,10 @@ function HomePage() {
     return (
         <React.Fragment>
             <Header />
-            <Filter />
-            <List />
+            <div className="wrapper">
+                <Filter />
+                <List />
+            </div>            
             <SeeMoreButton />
         </React.Fragment>        
     );

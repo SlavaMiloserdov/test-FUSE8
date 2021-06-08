@@ -8,7 +8,17 @@ $list-item__type_blue-color: #006F79;
 $list-item__type_orange-color: #EC6608;
 $list-item-bg-color: #F8F8F8;
 $list-item-border: 1px solid #D8D8D8;
-$list-item__img-size: 302px;
+$list-item__img-wrapper-h: 227px; 
+$list-item__title-pt: 20px;
+$list-item__type-p: 5px; 
+
+.list-item__title, .list-item__address,
+ .list-item__price, .list-item__additional-info {
+    margin: 0;
+
+    color: $list-item__text-color;
+    padding-left: 20px;
+}
 
 .d-none {
     display: none;
@@ -19,9 +29,11 @@ $list-item__img-size: 302px;
 }
 
 .list-item {
-    margin: 5% 1%;
+    width: 379px;
+    height: 381px;
+    margin: 0 0 38px 0;
+
     position: relative;
-    max-width: $list-item__img-size;
 
     list-style-type: none;
     background: $list-item-bg-color;
@@ -32,25 +44,34 @@ $list-item__img-size: 302px;
     font-family: $list-item-ff;
 }
 
+.list-item__img-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: $list-item__img-wrapper-h;
+}
+
+.list-item__img {
+    width: 100%;
+    height: 100%;
+}
+
 .list-item__title {
+    margin: 0;
+    padding-top: $list-item__title-pt;
+
     font-family: $list-item-ff;
     font-weight: $list-item__title-fw;
     font-size: $list-item__title-fs;
 }
 
-.list-item__title, .list-item__address,
- .list-item__price, .list-item__additional-info {
-    color: $list-item__text-color;
-    padding: 0 3%;
-}
-
 .list-item__type {
     position: absolute;
     right: 0;
-    top: 118px;
+    bottom: 0;
 
     margin: 0;
-    padding: 5px;    
+    padding: $list-item__type-p;
 
     color: $list-item__type-color;
 }
@@ -63,8 +84,30 @@ $list-item__img-size: 302px;
     background-color: $list-item__type_orange-color;
 }
 
+.list-item__price {
+    padding-top: 15px;
+}
+
 .list-item__price span {
     padding: 0 0 0 2%;
 
     font-weight: bold;    
+}
+
+.list-item__additional-info {
+    padding-top: 7px;
+}
+
+@media (max-width: 480px) {
+    .list-item {
+        width: 79vw;
+    }
+
+    .list-item__img-wrapper {
+        height: 47.292vw;
+    }
+
+    .list-item__img {
+        height: 100%;
+    }
 }
